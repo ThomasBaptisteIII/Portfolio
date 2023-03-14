@@ -1,91 +1,57 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="">
+      <section>
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+            <div className="relative h-64 overflow-hidden rounded-xl sm:h-80 lg:order-last lg:h-full">
+              <img
+                alt="Profile Portrait"
+                src="banner.jpg"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+
+            <div className="lg:py-24">
+              <h2 className="text-3xl font-bold sm:text-4xl">
+                Welcome!
+              </h2>
+
+              <p className="mt-4 text-gray-600 text-justify">
+                As an aspiring young web developer graduating this spring with a
+                BBA in Management Information Systems, I am excited to showcase
+                my skills and accomplishments. With a passion for creating
+                innovative and user-friendly web designs, I have developed a
+                diverse range of projects that demonstrate my technical
+                expertise and creative abilities. From designing responsive and
+                visually appealing websites to developing custom web
+                applications, my portfolio showcases my proficiency in HTML,
+                CSS, JavaScript, and other web technologies. I take pride in
+                crafting intuitive and engaging user experiences that bring
+                brands to life and drive engagement. With a strong foundation in
+                project management and a keen eye for detail, I am committed to
+                delivering high-quality work on time and within budget. Whether
+                you are looking to revamp your website, build a custom web
+                application, or launch a new digital project, I am ready to
+                bring my skills and expertise to the table. Please take a moment
+                to browse my portfolio and see some of the projects I have
+                worked on. If you have any questions or would like to discuss a
+                potential project, don't hesitate to get in touch. Thank you for
+                visiting my portfolio. I look forward to hearing from you soon!
+              </p>
+
+              <a
+                href="#"
+                className="mt-8 inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <section></section>
     </main>
-  )
+  );
 }
