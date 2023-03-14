@@ -6,7 +6,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="scrollbar scrollbar-thumb-emerald-600 bg-gradient-to-t from-emerald-600 via-emerald-300 to-emerald-700 min-h-screen">
+    <main className="bg-gradient-to-t from-emerald-600 via-emerald-300 to-emerald-700 min-h-screen">
       
       <div className="mx-auto max-w-3xl px-4 py-5 sm:py-12 sm:px-10 lg:py-16 lg:px-8 ">
         <div className="flex flex-col bg-white rounded-2xl p-10">
@@ -16,14 +16,14 @@ export default function Home() {
           <div className="relative rounded-lg text-center">
             <h1 className="text-5xl font-bold pb-5">Thomas Baptiste III</h1>
 
-            <div class="relative flex py-5 items-center">
-              <div class="flex-grow border-t border-emerald-400"></div>
-              <span class="flex-shrink mx-4 text-emerald-400">
+            <div className="relative flex py-5 items-center">
+              <div className="flex-grow border-t border-emerald-400"></div>
+              <span className="flex-shrink mx-4 text-emerald-400">
                 <h2 className="text-3xl font-extralight text-emerald-600">
                   Web Developer
                 </h2>
               </span>
-              <div class="flex-grow border-t border-emerald-400"></div>
+              <div className="flex-grow border-t border-emerald-400"></div>
             </div>
           </div>
           <div>
@@ -90,7 +90,7 @@ export default function Home() {
             </p>
           </div>
           
-          <button class="transition ease-in-out delay-150 text-white bg-black hover:-translate-y-1 hover:scale-110 rounded-full hover:bg-emerald-500 duration-300 max-w-sm px-12 py-5 my-10 mx-auto">
+          <button className="transition ease-in-out delay-150 text-white bg-black hover:-translate-y-1 hover:scale-110 rounded-full hover:bg-emerald-500 duration-300 max-w-sm px-12 py-5 my-10 mx-auto">
            <a href="mailto:ThomasBaptisteIII@outlook.com">Contact Me!</a> 
           </button>
         </div>
