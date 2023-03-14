@@ -1,5 +1,6 @@
 import './globals.css'
 
+
 export const metadata = {
   title: 'Professional Profile: Thomas Baptiste Portfolio',
   description: 'Thomas Baptiste Portfolio',
