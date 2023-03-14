@@ -1,11 +1,16 @@
-import { TiSocialLinkedinCircular,TiSocialGithubCircular,TiSocialInstagramCircular} from "react-icons/ti";
+import {
+  TiSocialLinkedinCircular,
+  TiSocialGithubCircular,
+  TiSocialInstagramCircular,
+} from "react-icons/ti";
 export default function Home() {
   return (
-    <main className="bg-gradient-to-br from-emerald-600 via-emerald-500 to-emerald-700">
+    <main className="bg-gradient-to-t from-emerald-600 via-emerald-300 to-emerald-700">
       <div className="mx-auto max-w-3xl px-4 py-5 sm:py-12 sm:px-10 lg:py-16 lg:px-8 ">
-      <div><img src="profile.webp" alt="Profile Portrait" /></div>
         <div className="flex flex-col bg-white rounded-2xl p-10">
-        
+          <div className="rounded-full mx-auto h-50 w-48 bg-emerald-500 object-fill">
+            <img  src="profile.webp" alt="Profile Portrait" />
+          </div>
           <div className="relative rounded-lg text-center">
             <h1 className="text-5xl font-bold pb-5">Thomas Baptiste III</h1>
             <h2 className="text-3xl font-light">Full Stack Developer</h2>
@@ -13,13 +18,29 @@ export default function Home() {
           <div>
             <ul className="flex justify-center gap-6 text-5xl py-10 text-gray-700">
               <li>
-               <a href="" className="hover:text-emerald-600 ease-in duration-700"> <TiSocialInstagramCircular/></a>
+                <a
+                  href="https://www.instagram.com/bertliii3/"
+                  className="hover:text-emerald-600 ease-in duration-700"
+                >
+                  {" "}
+                  <TiSocialInstagramCircular />
+                </a>
               </li>
               <li>
-               <a href="" className="hover:text-emerald-600 ease-in duration-700"><TiSocialGithubCircular /></a> 
+                <a
+                  href="https://github.com/ThomasBaptisteIII"
+                  className="hover:text-emerald-600 ease-in duration-700"
+                >
+                  <TiSocialGithubCircular />
+                </a>
               </li>
               <li>
-               <a href="" className="hover:text-emerald-600 ease-in duration-700"><TiSocialLinkedinCircular /></a> 
+                <a
+                  href="https://www.linkedin.com/in/thomasbaptisteiii/"
+                  className="hover:text-emerald-600 ease-in duration-700"
+                >
+                  <TiSocialLinkedinCircular />
+                </a>
               </li>
             </ul>
           </div>
@@ -57,8 +78,6 @@ export default function Home() {
               soon!
             </p>
           </div>
-
-
         </div>
       </div>
     </main>
