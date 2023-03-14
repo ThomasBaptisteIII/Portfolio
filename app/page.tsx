@@ -9,8 +9,8 @@ export default function Home() {
     <main className="bg-gradient-to-t from-emerald-600 via-emerald-300 to-emerald-700 min-h-screen">
       
       <div className="mx-auto max-w-3xl px-4 py-5 sm:py-12 sm:px-10 lg:py-16 lg:px-8 ">
-        <div className="flex flex-col bg-white rounded-2xl p-10">
-          <div className="rounded-full mx-auto h-50 w-48 bg-gradient-to-b from-emerald-600 via-gray-900 to-black  outline-dotted outline-offset-4 outline-emerald-400 object-fill my-10 shadow-inner  ">
+        <div className="flex flex-col bg-gradient-to-t  from-white via-emerald-100 to-white rounded-2xl p-10 shadow-lg outline-dashed outline-emerald-50">
+          <div className="rounded-full mx-auto h-50 w-48 bg-gradient-to-b from-emerald-600 via-gray-900 to-black  outline-dotted outline-offset-4 outline-emerald-400 object-fill my-10 shadow-inner">
             <img className="" src="profile.webp" alt="Profile Portrait" />
           </div>
           <div className="relative rounded-lg text-center">
@@ -90,8 +90,11 @@ export default function Home() {
             </p>
           </div>
           
-          <button className="transition ease-in-out delay-150 text-white bg-black hover:-translate-y-1 hover:scale-110 rounded-full hover:bg-emerald-500 duration-300 max-w-sm px-12 py-5 my-10 mx-auto">
-           <a href="mailto:ThomasBaptisteIII@outlook.com">Contact Me!</a> 
+          <button className="transition ease-in-out delay-150 text-white bg-emerald-500 hover:-translate-y-1 hover:scale-110 rounded-full hover:bg-emerald-700 hover:outline hover:outline-emerald-500
+          hover:shadow-inner duration-300 max-w-sm px-12 py-5 my-10 mx-auto focus:bg-black active:bg-emerald-900 ">
+           <a 
+           className="text-lg font-semibold hover:animate-pulse"
+           href="mailto:ThomasBaptisteIII@outlook.com">Contact Me!</a> 
           </button>
         </div>
       </div>
