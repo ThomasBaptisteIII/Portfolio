@@ -1,5 +1,3 @@
-**
-
 # Portfolio: Thomas Baptiste III
 ![Portfolio Portrait](https://i.imgur.com/VbBo4HO.png)
 
