@@ -2,11 +2,11 @@ import { TiSocialLinkedinCircular,TiSocialGithubCircular,TiSocialInstagramCircul
 export default function Home() {
   return (
     <main className="bg-gradient-to-br from-emerald-600 via-emerald-500 to-emerald-700">
-      <div class="mx-auto max-w-3xl px-4 py-5 sm:py-12 sm:px-10 lg:py-16 lg:px-8 ">
+      <div className="mx-auto max-w-3xl px-4 py-5 sm:py-12 sm:px-10 lg:py-16 lg:px-8 ">
       <div><img src="profile.webp" alt="Profile Portrait" /></div>
-        <div class="flex flex-col bg-white rounded-2xl p-10">
+        <div className="flex flex-col bg-white rounded-2xl p-10">
         
-          <div class="relative rounded-lg text-center">
+          <div className="relative rounded-lg text-center">
             <h1 className="text-5xl font-bold pb-5">Thomas Baptiste III</h1>
             <h2 className="text-3xl font-light">Full Stack Developer</h2>
           </div>
