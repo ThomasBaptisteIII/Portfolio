@@ -3,17 +3,28 @@ import {
   TiSocialGithubCircular,
   TiSocialInstagramCircular,
 } from "react-icons/ti";
+
 export default function Home() {
   return (
-    <main className="bg-gradient-to-t from-emerald-600 via-emerald-300 to-emerald-700">
+    <main className="scrollbar scrollbar-thumb-emerald-600 bg-gradient-to-t from-emerald-600 via-emerald-300 to-emerald-700 min-h-screen">
+      
       <div className="mx-auto max-w-3xl px-4 py-5 sm:py-12 sm:px-10 lg:py-16 lg:px-8 ">
         <div className="flex flex-col bg-white rounded-2xl p-10">
-          <div className="rounded-full mx-auto h-50 w-48 bg-emerald-500 object-fill">
-            <img  src="profile.webp" alt="Profile Portrait" />
+          <div className="rounded-full mx-auto h-50 w-48 bg-gradient-to-b from-emerald-600 via-gray-900 to-black  outline-dotted outline-offset-4 outline-emerald-400 object-fill my-10 shadow-inner  ">
+            <img className="" src="profile.webp" alt="Profile Portrait" />
           </div>
           <div className="relative rounded-lg text-center">
             <h1 className="text-5xl font-bold pb-5">Thomas Baptiste III</h1>
-            <h2 className="text-3xl font-light">Full Stack Developer</h2>
+
+            <div class="relative flex py-5 items-center">
+              <div class="flex-grow border-t border-emerald-400"></div>
+              <span class="flex-shrink mx-4 text-emerald-400">
+                <h2 className="text-3xl font-extralight text-emerald-600">
+                  Web Developer
+                </h2>
+              </span>
+              <div class="flex-grow border-t border-emerald-400"></div>
+            </div>
           </div>
           <div>
             <ul className="flex justify-center gap-6 text-5xl py-10 text-gray-700">
@@ -44,7 +55,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-
+        
           <div className="mt-4 text-gray-600">
             <p>
               Welcome to my portfolio! My name is Thomas Baptiste, and I am a
@@ -78,6 +89,10 @@ export default function Home() {
               soon!
             </p>
           </div>
+          
+          <button class="transition ease-in-out delay-150 text-white bg-black hover:-translate-y-1 hover:scale-110 rounded-full hover:bg-emerald-500 duration-300 max-w-sm px-12 py-5 my-10 mx-auto">
+           <a href="mailto:ThomasBaptisteIII@outlook.com">Contact Me!</a> 
+          </button>
         </div>
       </div>
     </main>

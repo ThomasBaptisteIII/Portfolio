@@ -1,5 +1,5 @@
-
 @tailwind base;
+
 @tailwind components;
 @tailwind utilities;
 
@@ -23,6 +23,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: "Raleway", sans-serif;
 }
 
 a {
