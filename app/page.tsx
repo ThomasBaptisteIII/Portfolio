@@ -24,7 +24,7 @@ export default function Home() {
             </ul>
           </div>
 
-          <div class="mt-4 text-gray-600">
+          <div className="mt-4 text-gray-600">
             <p>
               Welcome to my portfolio! My name is Thomas Baptiste, and I am a
               young developer with a passion for technology and a drive to
