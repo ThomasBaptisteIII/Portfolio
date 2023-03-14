@@ -1,57 +1,66 @@
+import { TiSocialLinkedinCircular,TiSocialGithubCircular,TiSocialInstagramCircular} from "react-icons/ti";
 export default function Home() {
   return (
-    <main className="">
-      <section>
-        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-            <div className="relative h-64 overflow-hidden rounded-xl sm:h-80 lg:order-last lg:h-full">
-              <img
-                alt="Profile Portrait"
-                src="banner.jpg"
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-            </div>
-
-            <div className="lg:py-24">
-              <h2 className="text-3xl font-bold sm:text-4xl">
-                Welcome!
-              </h2>
-
-              <p className="mt-4 text-gray-600 text-justify">
-                As an aspiring young web developer graduating this spring with a
-                BBA in Management Information Systems, I am excited to showcase
-                my skills and accomplishments. With a passion for creating
-                innovative and user-friendly web designs, I have developed a
-                diverse range of projects that demonstrate my technical
-                expertise and creative abilities. From designing responsive and
-                visually appealing websites to developing custom web
-                applications, my portfolio showcases my proficiency in HTML,
-                CSS, JavaScript, and other web technologies. I take pride in
-                crafting intuitive and engaging user experiences that bring
-                brands to life and drive engagement. With a strong foundation in
-                project management and a keen eye for detail, I am committed to
-                delivering high-quality work on time and within budget. Whether
-                you are looking to revamp your website, build a custom web
-                application, or launch a new digital project, I am ready to
-                bring my skills and expertise to the table. Please take a moment
-                to browse my portfolio and see some of the projects I have
-                worked on. If you have any questions or would like to discuss a
-                potential project, don't hesitate to get in touch. Thank you for
-                visiting my portfolio. I look forward to hearing from you soon!
-              </p>
-
-              <a
-                href="#"
-                className="mt-8 inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
-              >
-                Learn More
-              </a>
-            </div>
+    <main className="bg-gradient-to-br from-emerald-600 via-emerald-500 to-emerald-700">
+      <div class="mx-auto max-w-3xl px-4 py-5 sm:py-12 sm:px-10 lg:py-16 lg:px-8 ">
+      <div><img src="profile.webp" alt="Profile Portrait" /></div>
+        <div class="flex flex-col bg-white rounded-2xl p-10">
+        
+          <div class="relative rounded-lg text-center">
+            <h1 className="text-5xl font-bold pb-5">Thomas Baptiste III</h1>
+            <h2 className="text-3xl font-light">Full Stack Developer</h2>
           </div>
-        </div>
-      </section>
+          <div>
+            <ul className="flex justify-center gap-6 text-5xl py-10 text-gray-700">
+              <li>
+               <a href="" className="hover:text-emerald-600 ease-in duration-700"> <TiSocialInstagramCircular/></a>
+              </li>
+              <li>
+               <a href="" className="hover:text-emerald-600 ease-in duration-700"><TiSocialGithubCircular /></a> 
+              </li>
+              <li>
+               <a href="" className="hover:text-emerald-600 ease-in duration-700"><TiSocialLinkedinCircular /></a> 
+              </li>
+            </ul>
+          </div>
 
-      <section></section>
+          <div class="mt-4 text-gray-600">
+            <p>
+              Welcome to my portfolio! My name is Thomas Baptiste, and I am a
+              young developer with a passion for technology and a drive to
+              become a full-stack developer. I will graduate in May and am
+              excited to take the next step in my career.
+            </p>
+            <p>
+              <br />
+              Throughout my academic journey, I have gained a strong foundation
+              in computer science, web development, and programming languages
+              like Python, JavaScript, and SQL. I have also completed various
+              projects, individually and as part of a team, which have given me
+              practical experience in developing web applications and mobile
+              apps.
+            </p>
+            <br />
+            <p>
+              As a full-stack developer, I aim to utilize my skills to create
+              innovative and user-friendly web applications that solve
+              real-world problems. I believe in a user-centered approach to
+              development, where the end-user is always at the forefront of the
+              design process. With a keen eye for detail and a passion for
+              creating clean, efficient code, I am confident in delivering
+              high-quality products.{" "}
+            </p>
+            <br />
+            <p>
+              Thank you for taking the time to visit my portfolio. I am excited
+              about the opportunities and look forward to connecting with you
+              soon!
+            </p>
+          </div>
+
+
+        </div>
+      </div>
     </main>
   );
 }
